@@ -1,0 +1,612 @@
+body{
+    margin: 0;
+    margin-top: 0;
+    background-color: #FFF8F1;
+
+}
+
+/* Encabezado */
+.encabezado{
+    background: linear-gradient(to right, #FFC107, #FF5722 28%, #D32F2F 100%);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.pym{
+    width: 20vh;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.lupa{
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+   
+}
+
+.barra{
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 70vh;
+    border-radius: 10px;
+    
+}
+
+.encabezado svg{
+    width: 3vh;
+}
+
+
+
+
+
+.busqueda{
+    background-color: #fffefd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.secciones{
+    background-color: #FFE9D2;
+    opacity: 100%;
+    height: 7vh;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+
+}
+
+.nav{
+    color: #DD3322;
+    opacity: 1;
+    padding: 0px 200px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-size: large;
+    font-weight: 700;
+    font-style: normal;
+    background-color: none;
+}
+
+.boton{
+    color: #DD3322;
+    opacity: 1;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-size: large;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #FFE9D2;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+/* Encabezado */
+
+
+/* Bienvenida */
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+.imagen-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #FF5722 10%, #D32F2F 40% , rgba(255, 193, 7, 0) 80%);
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.overlay h1{
+    font-family: "Inter", sans-serif;
+    color: #FFE9D2;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 100px;
+    margin-bottom: 8px;
+}
+
+.overlay p{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
+    margin-left: 100px;
+    color: #FFE9D2;
+    margin-top: 0px;
+    width: 50%;
+}
+/* Bienvenida */
+
+
+/* Cuerpo */
+
+ody {
+    background-color: orange;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+
+.products{
+  display: flex;
+  flex-direction: row;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product-card-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  
+  .product-card-discount {
+    font-size: 1em;
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  
+  .product-card-description {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-card-cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .product-card-cta:hover {
+    background-color: #0062cc;
+  }
+  
+  .product-card-cta a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .product-title {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .product-price {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  
+  .product-discount {
+    font-size: 0.8em;
+    color: #dc3545;
+    margin-bottom: 5px;
+  }
+  
+  .product-installments {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+  
+
+
+
+#Vortice{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-discount {
+    font-size: 1em;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.product-installments {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-shipping {
+    font-size: 0.9em;
+    color: #DD3322;
+    font-weight: bold;
+}
+
+
+.busqueda input::placeholder {
+  color: black;
+  padding: 20px;
+  font-size: 12px;
+  }
+
+  .promo img{
+    height: 40%;
+    width: 100%;
+background-repeat: no-repeat;
+  }
+
+  .Titulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  a{
+    color: #DD3322;
+  }
+.fa-solid-fa-heart{
+    display: flex;
+   justify-content: flex-end;
+
+}
+
+.descuentos{
+    width: 30vh;
+}
+
+.button {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 6px;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .button-77 {
+    padding: 19px 32px;
+  }
+}
+
+.button:before,
+.button:after {
+  border-radius: 20px;
+}
+
+.button:before {
+  background-color: rgba(249, 58, 19, .32);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+}
+
+.button:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button:active:not(:disabled):after {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: .24;
+}
+#Buttona{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer{
+  background-color: #220606;
+  height: 25vh;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  margin-top: 100px;
+  
+}
+
+h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.recuadros{
+    
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.recuadros div{
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 30vh;
+    width: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.recuadros h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: smaller;
+    margin: 3px;
+    text-align: center;
+    color: #555;
+}
+
+.recuadros p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: smaller;
+    margin: 5px;
+    text-align: center;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+/* Cuerpo */
+
+
+
+
+
+
+/* Footer */
+.footer{
+    background-color: #220606;
+    height: 30vh;
+    display: flex;
+    
+
+}
+
+.logo{
+    
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 30vh;
+}
+
+.logo p{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0px;
+    color: #FFF8F1;
+}
+
+.footer p{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0px;
+    color: #FFF8F1;
+}
+
+.apoyo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: small;
+    width: 15%;
+}
+
+.social-media{
+   
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 20%;
+}
+
+.social-media svg{
+    width: 7%;
+    margin: 10px;
+}
+/* Footer */

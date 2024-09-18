@@ -1,0 +1,411 @@
+body{
+    margin: 0;
+    margin-top: 0;
+    background-color: #FFF8F1;
+
+}
+
+
+    /* Encabezado */
+    .encabezado{
+        background: linear-gradient(to right, #FFC107, #FF5722 28%, #D32F2F 100%);
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    
+    .pym{
+        width: 20vh;
+        margin-bottom: 8px;
+        margin-top: 15px;
+    }
+    
+    .lupa{
+        width: 30px;
+        margin-right: 5px;
+        margin-left: 5px;
+       
+    }
+    
+    .barra{
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 70vh;
+        border-radius: 10px;
+        
+    }
+    
+    .encabezado svg{
+        width: 3vh;
+    }
+    
+    
+    
+    
+    
+    .busqueda{
+        background-color: #fffefd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .secciones{
+        background-color: #FFE9D2;
+        opacity: 100%;
+        height: 7vh;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+    
+    }
+    
+    .nav{
+        color: #DD3322;
+        opacity: 1;
+        padding: 0px 200px;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Inter", sans-serif;
+        font-size: large;
+        font-weight: 700;
+        font-style: normal;
+        background-color: none;
+    }
+    
+    .boton{
+        color: #DD3322;
+        opacity: 1;
+        padding: 0px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Inter", sans-serif;
+        font-size: large;
+        font-weight: 700;
+        font-style: normal;
+        background-color: #FFE9D2;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Encabezado */
+
+
+
+    /* Cuerpo */
+.volver{
+    background-color: none;  
+}
+
+.flecha{
+    width: 5vh;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.contenedor-producto{
+    
+    background-color: #FFF8F1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.detalle{
+    background-color: #FFF8F1;
+    width: 110vh;
+    height: 80vh;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.producto{
+    
+    width: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.producto h3{
+    
+    font-family: "Titan One", sans-serif;
+    font-weight: 200;
+    font-size: small;
+    font-style: normal;
+    padding-bottom: 260px;
+}
+
+.vinilo{
+    
+    width: 50vh;
+    
+}
+
+.producto img{
+    padding-top: 10px;
+    height: 30vh;
+    width: 50vh;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.descripcion{
+   
+    width: 60vh;
+   
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: left   ;
+    flex-direction: column;
+}
+.titulo h2{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 5px;
+    
+}
+
+.titulo p{
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: larger;
+    margin-top: 0;
+    
+}
+
+.precio{
+    font-family: "Inter", sans-serif;
+    font-size: large;
+    font-weight: 300;
+    font-style: normal;
+    color: #FF3D00;
+    font-size: xx-large;
+    text-align: right;
+
+    display: flex;
+    align-items: end;
+    justify-content: end;
+   
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 0;
+    
+    
+}
+
+.acciones{
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+
+}
+
+.acciones button{
+    background: linear-gradient(to right, #FFC107, #FF5722 28%, #D32F2F 100%);
+    border-radius: 40px;
+    font-family: "Inter", sans-serif;
+    font-size: large;
+    font-weight: 700;
+    font-style: normal;
+    color: #FFF2DC;
+    font-size: large;
+    border: none;
+    width: 55vh;
+    height: 5vh;
+
+
+}
+
+.tracklist{
+    
+    height: 40vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+
+
+.tracklist h1{
+    font-family: "Inria Sans", sans-serif;
+    font-style: normal;
+    font-size: larger;
+    margin-bottom: 0;
+}
+
+.tracklist hr{
+    margin-top: 1px;
+
+}
+
+.canciones{
+    
+    height: 35vh;
+    display: flex;
+}
+
+.columna1{
+    
+    width: 25vh;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: small;
+}
+
+.columna2{
+    
+    width: 28vh;
+    width: 27vh;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: small;
+}
+
+.especificaciones{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 33vh;
+    width: 48vh;
+    display: flex;
+}
+
+.titulo_info{
+   
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: small;
+    width: 15vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.titulo_info h4{
+    margin: 3px;
+    font-size: medium;
+}
+
+.info{
+    
+    font-family: "Inria Sans", sans-serif;
+    
+    font-style: normal;
+    font-size: small;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.info h4{
+    margin: 5.5px;
+    font-size: smaller;
+    font-weight: 100;
+}
+
+
+.footer{
+    background-color: #220606;
+    height: 30vh;
+    display: flex;
+
+}
+
+.logo{
+    
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 30vh;
+}
+
+.logo p{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0px;
+    color: #FFF8F1;
+}
+    /* Cuerpo */
+
+
+    /* Footer */
+.footer p{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0px;
+    color: #FFF8F1;
+}
+
+.apoyo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: small;
+    width: 15%;
+}
+
+.social-media{
+   
+    display: flex;
+    
+    justify-content: start;
+    align-items: center;
+    width: 20%;
+}
+
+.social-media svg{
+    width: 7%;
+    margin: 10px;
+}
+    /* Footer */
