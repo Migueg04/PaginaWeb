@@ -59,34 +59,32 @@
         
         <div class="detalle">
             <div class="producto">
-                <img class="vinilo" src="./Imagenes/queen.jpg" alt="">
+                <img class="vinilo" id="images" src="./Imagenes/queen.jpg" alt="">
 
                 <div class="especificaciones">
                     <div class="titulo_info">
                         <h4>Label</h4>
-                        <h4>Series</h4>
                         <h4>Format</h4>
-                        <h4>Country</h4>
+                        <h4>Colour</h4>
                         <h4>Released</h4>
                         <h4>Genre</h4>
                         <h4>Style</h4>
                     </div>
                     <div class="info">
-                        <h4>Hollywood Records - D00262001</h4>
-                        <h4>Queen on Vinyl</h4>
-                        <h4>Vinyl, LP, Album, Reissue, Remastered, Gatefold, 180 Gram</h4>
-                        <h4>USA & Canada</h4>
-                        <h4>2008</h4>
-                        <h4>Rock</h4>
-                        <h4>Hard Rock, Pop Rock, Classic Rock</h4>
+                        <h4 id="label">Commercial Marketing</h4>
+                        <h4 id="format">LP Vinyl</h4>
+                        <h4 id="colour">Black Vinyl</h4>
+                        <h4 id="year">2008</h4>
+                        <h4 id="genre">Rock</h4>
+                        <h4 id="style">Hard Rock, Pop Rock, Classic Rock</h4>
                     </div>
 
                 </div>
             </div>
             <div class="descripcion">
                 <div class="titulo">
-                    <h2>A Night At The Opera</h2>
-                    <p>Queen 1975</p> 
+                    <h2 id="albumName">A Night At The Opera</h2>
+                    <p id="artist">Queen 1975</p> 
                     
                 </div>
 
@@ -96,21 +94,11 @@
                         <hr>
                     </div>
                     <div class="canciones">
-                        <div class="columna1">
-                            <p>A1 Death On Two Legs</p>
-                            <p>A2 Lazing On A Sunday Afternoon</p>
-                            <p>A3 I’m In Love With My Car</p>
-                            <p>A4 You’re My Best Friend</p>
-                            <p>A5 ‘39</p>
-                            <p>A6 Sweet Lady</p>
-                            <p>A7 Seaside Rendezvous</p>
+                        <div class="columna1" id="songs">
+                            
                         </div>
-                        <div class="columna2">
-                            <p>B1 The Prophet’s Song</p>
-                            <p>B2 Love Of My Life</p>
-                            <p>B3 Good Company</p>
-                            <p>B4 Bohemian Rhapsody</p>
-                            <p>B5 God Save The Queen</p>
+                        <div class="columna2" id="songs2">
+                            
                             
                         </div>
                     </div>
@@ -118,7 +106,7 @@
                 
                 <div class="acciones">
                     <div>
-                        <h1 class="precio">$35.99 USD</h1>
+                        <h1 class="precio" id="price">35.99 USD</h1>
                         <button>Add to car</button>
                         <br>
                         <br>
@@ -162,8 +150,8 @@
     <!-- Footer -->
 
 
-
-
-
+    <script src="./data.js"></script>
+    <script src="./Product.js"></script>
+    <script src="./detalle.js"></script>
 </body>
 </html>
