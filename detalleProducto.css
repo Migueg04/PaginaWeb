@@ -67,13 +67,26 @@ body{
         width: 100%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         display: flex;
-    
-    }
-    
-    .nav{
+      
+      }
+      
+      .nav{
+          color: #DD3322;
+          opacity: 1;
+          padding: 0px 200px;
+          display: flex;
+          justify-content: space-between;
+          font-family: "Inter", sans-serif;
+          font-size: large;
+          font-weight: 700;
+          font-style: normal;
+      
+      }
+      
+      .nav2{
         color: #DD3322;
         opacity: 1;
-        padding: 0px 200px;
+        padding: 0px 10px;
         display: flex;
         justify-content: space-between;
         font-family: "Inter", sans-serif;
@@ -81,12 +94,13 @@ body{
         font-weight: 700;
         font-style: normal;
         background-color: none;
-    }
-    
-    .boton{
+        
+      }
+      
+      .boton{
         color: #DD3322;
         opacity: 1;
-        padding: 0px 100px;
+        padding: 0px 90px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -99,8 +113,7 @@ body{
         border-radius: 20px;
         border: none;
         cursor: pointer;
-    }
-
+      }
     /* Encabezado */
 
 

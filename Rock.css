@@ -81,10 +81,10 @@ body{
 
 }
 
-.nav2{
+.nav{
   color: #DD3322;
   opacity: 1;
-  padding: 0px 10px;
+  padding: 0px 200px;
   display: flex;
   justify-content: space-between;
   font-family: "Inter", sans-serif;
@@ -92,13 +92,12 @@ body{
   font-weight: 700;
   font-style: normal;
   background-color: none;
-  
 }
 
 .boton{
   color: #DD3322;
   opacity: 1;
-  padding: 0px 90px;
+  padding: 0px 100px;
   display: flex;
   justify-content: center;
   align-items: center;

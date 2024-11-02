@@ -109,7 +109,7 @@ let data = [
         "label": "BMG Rights Management",
         "format": "LP Vinyl",
         "colour" : "Black Vinyl",
-        "genre": "Electronic, Pop",
+        "genre": "Pop",
         "style": "Synth-pop, Ballad, Vocal",
         "year": "1991",
         "songs" : [
@@ -170,7 +170,7 @@ let data = [
         "label": "Commercial Marketing",
         "format": "LP Vinyl",
         "colour" : "Baby Blue Vinyl",
-        "genre": "Electronic, Pop, Folk, World, & Country",
+        "genre": "Pop",
         "style": "Country, Dance-pop",
         "year": "2024",
         "songs" :[
@@ -200,7 +200,7 @@ let data = [
         "label": "UMR",
         "format": "LP Vinyl",
         "colour" : "Zoetrope Vinyl",
-        "genre": "Rock, Pop, Children's, Stage & Screen",
+        "genre": "Stage & Screen",
         "style": "Soundtrack",
         "year": "1993",
         "songs" :[
@@ -230,7 +230,7 @@ let data = [
         "label": "UMR",
         "format": "LP Vinyl",
         "colour" : "Transparent Splatter Vinyl",
-        "genre": "Children's, Stage & Screenn",
+        "genre": "Stage & Screen",
         "style": "Score, Musical",
         "year": "1989",
         "songs" : [
@@ -390,7 +390,7 @@ let data = [
         "label": "Atlantic",
         "format": "LP Vinyl",
         "colour" : "Black Vinyl",
-        "genre": "Funk / Soul",
+        "genre": "Soul",
         "style": "	Contemporary R&B, Soul",
         "year": "2021",
         "songs" :[
@@ -417,7 +417,7 @@ let data = [
         "label": "Warner Bros Records",
         "format": "LP Vinyl",
         "colour" : "Black Vinyl",
-        "genre": "Electronic, Rock, Funk",
+        "genre": "Pop",
         "style": "Power Pop, Dance-pop, Funk",
         "year": "2020",
         "songs" : [
