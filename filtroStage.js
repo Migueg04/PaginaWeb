@@ -16,11 +16,11 @@ function parseDataToProducts() {
 
 function renderAllProducts() {
     let container = document.getElementById("products") 
-    let resultados = products.filter(product =>
+    products = products.filter(product =>
         product.genre === "Stage & Screen")
         
-    for(let i = 0; i < resultados.length; i++) {
-        let product = resultados[i]
+    for(let i = 0; i < products.length; i++) {
+        let product = products[i]
         container.innerHTML += product.htmlCard(i)
     }
 

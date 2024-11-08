@@ -16,21 +16,17 @@ function parseDataToProducts() {
 
 function renderAllProducts() {
     let container = document.getElementById("products") 
-    let resultados = products.filter(product =>
-        product.genre === "Classical")
+    products = products.filter(product =>
+        product.genre === "Classical" || product.genre === "Soul")
 
-    let resultadosothers = products.filter(product =>
-            product.genre === "Soul")
+
+    
         
-    for(let i = 0; i < resultados.length; i++) {
-        let product = resultados[i]
+    for(let i = 0; i < products.length; i++) {
+        let product = products[i]
         container.innerHTML += product.htmlCard(i)
     }
 
-    for(let i = 0; i < resultadosothers.length; i++) {
-        let product = resultadosothers[i]
-        container.innerHTML += product.htmlCard(i)
-    }
 }
 
 function productSelected(pos) {
