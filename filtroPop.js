@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 let products = []
 function parseDataToProducts() {
     for(let i = 0; i < data.length; i++) {

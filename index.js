@@ -1,5 +1,15 @@
 let products = []
-function parseDataToProducts() {
+
+
+async function getProducts() {
+    let response = await fetch("https://raw.githubusercontent.com/Migueg04/PaginaWeb/refs/heads/main/data.json")
+    let data = await response.json()
+    parseDataToProducts(data)
+    renderAllProducts()
+}
+
+
+function parseDataToProducts(data) {
     for(let i = 0; i < data.length; i++) {
         let map = data[i]
         let product = new Product(map["images"], map["albumName"], map["artist"], map["price"], map["discount"], map["genre"], map["style"], map["year"], map["songs"], map ["songs2"], map ["label"], map ["format"], map ["colour"])
@@ -20,5 +30,4 @@ function productSelected(pos) {
     window.location = "./detalleProducto.html?name=" + productSelected.albumName
 }
 
-parseDataToProducts()
-renderAllProducts()
+getProducts()
