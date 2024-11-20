@@ -26,10 +26,10 @@ function renderAllProducts() {
 }
 
 
-
 function productSelected(pos) {
     let productSelected = products[pos]
     window.location = "./detalleProducto.html?name=" + productSelected.albumName
 }
+
 
 getProducts()

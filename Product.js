@@ -41,6 +41,7 @@ class Product {
                     <button class="button" role="button">
                         <a id="Buttona" href="#" onclick="productSelected(${pos})"> More Info</a>
                     </button>
+                    ${label}
                     <button class="fav" onclick="selected(${pos})">${buttonLabel}</button>
                 </div>
             </div>
