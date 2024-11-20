@@ -7,7 +7,7 @@ function getProduct() {
         let title = map["albumName"]
         console.log(title)
         if(title === nameFromUrl) {
-            let product = new Product(map["images"], map["albumName"], map["artist"], map["price"], map["discount"], map["genre"], map["style"], map ["year"], map ["songs"], map ["songs2"], map ["label"], map["format"], map["colour"])
+            let product = new Product(map["images"], map["albumName"], map["artist"], map["price"], map["discount"], map["genre"], map["style"], map ["year"], map ["songs"], map ["songs2"], map ["label"], map["format"], map["colour"], map ["saved"])
             return product
         }
     }
