@@ -19,14 +19,14 @@ class Product {
 
     htmlCard(pos) {
 
-        let buttonLabel = "Guardar"
+        let buttonLabel = "Fav"
         if(this.saved) {
-            buttonLabel = "Quitar"
+            buttonLabel = "No Fav"
         }
 
         let label = ""
         if(this.saved) {
-            label = "<label>Guardado</label>"
+            label = "<label>Fav</label>"
         }
 
 
