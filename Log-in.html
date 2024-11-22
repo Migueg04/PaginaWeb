@@ -15,36 +15,32 @@
             <div>
                 <h1>Login</h1>
             </div>
-            <div>
-                <h2>Username</h2>
-                <form action="">
+            <form id="login-form">
+                <div>
+                    <h2>Email</h2>
                     <div class="Icons">
                         <img class="image" src="./Imagenes/Username.jpg" alt="USER ICON" />
+                        <input type="text" placeholder="Username or Email" id="email" required />
                     </div>
-                    <input type="text" placeholder="Username or Email" id="Username" />
-                </form>
-            </div>
-            <div>
-                <h2>Password</h2>
-                <form action="">
+                    
+                <div>
+                    <h2>Password</h2>
                     <div class="Icons">
                         <img class="image" src="./Imagenes/password-148.png" alt="Password ICON"/>
+                        <input id="password" type="password" placeholder="Password" required />
                     </div>
-                    <input id="Password" class="input-field" type="password" placeholder="Password">
-                </form>
-            </div>
+                <button class="button" type="submit" href="Catalogo.html">Log In</button>
+            </form>
+        
+
+
+
             <div class="last">
                 <a href="Forgot Password.html" id="uwu">Forgot Password?</a>
-            </div>
-            
-            <button class="button" role="button">
-            <a id="Buttona" href="./Catalogo.html">Log In</a>
-            </button>
-            <div>
                 <h3>You don't have an account?</h3>
-                </div>
             <a class="Sign-up" href="Sign-up.html">Sign Up here</a> 
         </div>
+        <script src="./log-in.js"></script>
     </body>
 </html>
 

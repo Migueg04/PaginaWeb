@@ -19,15 +19,12 @@ class Product {
 
     htmlCard(pos) {
 
-        let buttonLabel = "Fav"
+        let buttonLabel = "Añadir a Favoritos"
         if(this.saved) {
-            buttonLabel = "No Fav"
+            buttonLabel = "Quitar de Favoritos"
         }
 
-        let label = ""
-        if(this.saved) {
-            label = "<label>Fav</label>"
-        }
+        
 
 
         return `
@@ -41,8 +38,8 @@ class Product {
                     <button class="button" role="button">
                         <a id="Buttona" href="#" onclick="productSelected(${pos})"> More Info</a>
                     </button>
-                    ${label}
-                    <button class="fav" onclick="selected(${pos})">${buttonLabel}</button>
+                   
+                    <button class="button" class="fav" onclick="selected(${pos})">${buttonLabel}</button>
                 </div>
             </div>
                     

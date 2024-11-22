@@ -9,14 +9,16 @@ async function getProducts() {
 }
 
 function parseDataToProducts(data) {
-    for(let i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
         let map = data[i]
-        let product = new Product(map["images"], map["albumName"], map["artist"], map["price"], map["discount"], map["genre"], map["style"], map["year"], map["songs"], map ["songs2"], map ["label"], map ["format"], map ["colour"], map ["saved"])
+        let productSaved = isProductSaved(map["albumName"])
+        let product = new Product(map["images"], map["albumName"], map["artist"], map["price"], map["discount"], map["genre"], map["style"], map["year"], map["songs"], map["songs2"], map["label"], map["format"], map["colour"], productSaved)
         products.push(product)
     }
+    renderAllProducts(products)
 }
 
-function renderAllProducts() {
+function renderAllProducts(products) {
     let container = document.getElementById("fav")
     container.innerHTML = ""
     for(let i = 0; i < products.length; i++) {
@@ -27,30 +29,29 @@ function renderAllProducts() {
 
 function selected(pos) {
     let product = products[pos]
+    let savedProducts = localStorage.getItem("savedProducts")
+    let list = savedProducts ? JSON.parse(savedProducts) : []
+
     if(!product.saved) {
         product.saved = true
         let map = product.toMap()
-        let savedProducts = localStorage.getItem("savedProducts")
-        let list = []
-        if (savedProducts) {
-            list = JSON.parse(savedProducts)
-        }
         list.push(map)
-        let listString = JSON.stringify(list)
-        localStorage.setItem("savedProducts", listString)
-        renderAllProducts(products)
     } else {
-        // TODO: Remove item
+        product.saved = false
+        list = list.filter(p => p.albumName !== product.albumName)
     }
+    localStorage.setItem("savedProducts", JSON.stringify(list))
+    products = products.filter(p => p.saved) // Only keep saved products
+    renderAllProducts(products)
 }
 
-function isProductSaved(AlbumName) {
+function isProductSaved(albumName) {
     let savedProducts = localStorage.getItem("savedProducts")
     if(savedProducts) {
         let list = JSON.parse(savedProducts)
         for(let i = 0; i < list.length; i++){
             let obj = list[i]
-            if(obj["AlbumName"] === AlbumName) {
+            if(obj["albumName"] === albumName) {
                 return true
             }
         }

@@ -1,12 +1,12 @@
 *{font-family: 'Clash Display', sans-serif;}
 
 body{
-    background-image: url(./Imagenes/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #FFF8F1;
 }
 h1{
     color: #562809;
@@ -17,7 +17,8 @@ h2{
 #fondo{
     background-color: #FFF8F1;
     width: 50vh;
-    height: 90vh;
+    height: 80vh;
+    box-shadow:0 4px 8px black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -33,39 +34,49 @@ border: none;
 border-bottom: 2px solid #562809;
 background-color: transparent;
 }
-#phoneNumber{
-  border: none;
-border-bottom: 2px solid #562809;
-background-color: transparent;
-}
 #Password{
-  border: none;
-  border-bottom: 2px solid #562809;
-  background-color: transparent;}
-#password{
 border: none;
 border-bottom: 2px solid #562809;
 background-color: transparent;}
-#confirmPassword{
-  border: none;
-  border-bottom: 2px solid #562809;
-  background-color: transparent;}
-#email{
-  border: none;
-border-bottom: 2px solid #562809;
-background-color: transparent;}
-
 div{
     padding: 10px;
 }
-    
+#email{
+  border: none;
+  border-bottom: 2px solid #562809;
+  background-color: transparent;}
+  #phoneNumber{
+    border: none;
+    border-bottom: 2px solid #562809;
+    background-color: transparent;}
+    div{
+        padding: 10px;
+    }
+  div{
+      padding: 10px;
+  }
+#Password2{
+  border: none;
+  border-bottom: 2px solid #562809;
+  background-color: transparent;}
+  div{
+      padding: 10px;
+  }
+  #password{
+    border: none;
+    border-bottom: 2px solid #562809;
+    background-color: transparent;}
+    div{
+        padding: 10px;
+    }   
 form{
     display: flex;
-    flex-direction: column;
+    flex-direction: horizontal;
     justify-content: flex-start;
-    align-items: center; 
-  
-  }
+    align-items: center; }
+.image {
+    width: 20px;
+}
 a {
     display: flex;
     flex-direction: column;
@@ -93,6 +104,13 @@ a {
     font-size: 13px;
     display: flex;
     justify-content: flex-end;
+}
+
+.inside{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 
@@ -202,54 +220,14 @@ a {
     text-decoration: none;
   }
 
-
-
-
-  /* Add this new class for icons */
-.Icons {
+  .flecha{
+    margin-right: 4px;
+    width: 3vh;
+    margin-top: 15px;
+}
+.titulo{
   display: flex;
-  align-items: center; /* Center align icon and input */
-}
-
-/* Modify the input styles */
-input {
-  flex: 1; /* Allow input to take remaining space */
-  border: none;
-  border-bottom: 2px solid #562809;
-  background-color: transparent;
-  padding: 10px; /* Add padding for better appearance */
-}
-
-/* Adjust the image class for icons */
-.image {
-  width: 20px; /* Icon size */
-  height: 20px; /* Icon size */
-  margin-right: 10px; /* Space between icon and input */
-}
-
-/* Add this to your Log-in.css */
-
-#login-form {
-  text-align: center; /* Centers the button */
-}
-
-.last {
-  text-align: center; /* Centers the forgot password link */
-  margin-top: 20px; /* Optional: Adds some space above the link */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.button {
-  margin-top: 20px; /* Adds space above the button */
-}
-
-/* Center all links in the login form */
-
-/* If you have a specific class for links, you can also do this */
-a {
-  display: inline-block; /* Makes the link behave like a block element */
-  text-align: center; /* Centers the text within the link */
-  margin: 10px 0; /* Optional: Adds vertical spacing between links */
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
