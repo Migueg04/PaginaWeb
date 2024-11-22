@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (storedEmail === email && storedPassword === password) {
                 alert('Login successful');
-                window.location.href = 'cuenta.html'; // Redirect on successful login
+                window.location.href = 'Catalogo.html'; // Redirect on successful login
             } else {
                 alert('Email or password incorrect.');
             }

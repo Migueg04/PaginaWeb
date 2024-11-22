@@ -42,5 +42,6 @@ function login() {
     localStorage.setItem('password', password); // Note: Storing passwords in local storage is not secure!
 
     // Redirect to Catalogo.html
-    window.location.href = "./Catalogo.html";
+     window.location.href = 'Catalogo.html';
 }
+

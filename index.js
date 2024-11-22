@@ -62,4 +62,6 @@ function isProductSaved(albumName) {
     return false
 }
 
+
+
 getProducts()

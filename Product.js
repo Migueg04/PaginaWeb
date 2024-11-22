@@ -28,6 +28,7 @@ class Product {
 
 
         return `
+        
         <div class="product-card">
                 <img src="${this.images}" class="product-image">
                 <h2 class="product-title">${this.albumName}</h2>
@@ -39,7 +40,7 @@ class Product {
                         <a id="Buttona" href="#" onclick="productSelected(${pos})"> More Info</a>
                     </button>
                    
-                    <button class="button" class="fav" onclick="selected(${pos})">${buttonLabel}</button>
+                    <button class="button"  onclick="selected(${pos})">${buttonLabel}</button>
                 </div>
             </div>
                     

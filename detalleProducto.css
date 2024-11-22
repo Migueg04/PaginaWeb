@@ -256,7 +256,7 @@ body{
 }
 
 .acciones button{
-    background: linear-gradient(to right, #FFC107, #FF5722 28%, #D32F2F 100%);
+    
     border-radius: 40px;
     font-family: "Inter", sans-serif;
     font-size: large;

@@ -6,6 +6,7 @@
     <title>Profile</title>
 
     <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./Catalogo.css">
     <script src="https://kit.fontawesome.com/547f79f394.js" crossorigin="anonymous"></script>
 
 
@@ -35,10 +36,10 @@
     <div class="secciones">
 
         <div class="nav">
-            <button class="boton">Genre</button>
-            <button class="boton">Sales</button>
-            <button class="boton">Sell</button>
-            <button class="boton">Own Collection</button>
+            <a href="./Rock.html" target="_self" class="nav2"><button class="boton" onclick="filterproducts()">Rock</button></a>
+            <a href="./Pop.html" target="_self" class="nav2"><button class="boton">Pop</button></a>
+            <a href="./Stage and Screen.html" target="_self" class="nav2"><button class="boton">Stage and Screen</button></a>
+            <a href="./Others.html" target="_self" class="nav2"><button class="boton">Others</button></a>
             
         </div>
     </div>
@@ -57,9 +58,10 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fff8f1" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
             </div>
             <div class="info-perfil">
-                <h1>Buster Moon</h1>
-                <h5>Buster.moon27@gmail.com</h5>
+                <h1 id="username">Username</h1> <!-- Placeholder for Username -->
+                <h5 id="email">email</h5> <!-- Placeholder for Email -->
                 <p>Member since 2024</p>
+                <a href="#" id="logoutLink" onclick="logout()">Logout</a>
                 
             </div>
             
@@ -147,7 +149,26 @@
     </div>
     <!-- Footer -->
     
+<script src="./profile.js"></script>
+<script src="./Product.js"></script>
+<script src="./data.js"></script>
+<script src="./index.js"></script>
+<script src="./filtro.js"></script>
 
+<script>
+    // Function to load user info from local storage
+    function loadUserInfo() {
+        const username = localStorage.getItem('username'); // Get username from local storage
+        const email = localStorage.getItem('email'); // Get email from local storage
+
+        // Update the HTML elements with the retrieved values
+        document.getElementById('username').textContent = username ? username : 'Guest'; // Default to 'Guest' if not found
+        document.getElementById('email').textContent = email ? email : 'No email provided'; // Default message if not found
+    }
+
+    // Call the function to load user info on page load
+    window.onload = loadUserInfo;
+</script>
 </body>
 
 
