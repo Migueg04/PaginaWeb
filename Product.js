@@ -19,9 +19,9 @@ class Product {
 
     htmlCard(pos) {
 
-        let buttonLabel = "Añadir a Favoritos"
+        let buttonLabel = "Add to favourites"
         if(this.saved) {
-            buttonLabel = "Quitar de Favoritos"
+            buttonLabel = "Remove from favorites"
         }
 
         

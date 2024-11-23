@@ -1,7 +1,27 @@
 const params = new URLSearchParams(window.location.search)
 const nameFromUrl = params.get("name")
 
+let currentUser = JSON.parse(localStorage.getItem(localStorage.getItem("currentUser")))
+
+const addToFavButton = document.getElementById("addToFavouritesButton") 
+
+function isProductSaved(albumName) {
+    let loggedUser = JSON.parse(localStorage.getItem(localStorage.getItem("currentUser"))) //Load logged user in json format
+    let savedProducts = loggedUser.favorites
+    if(savedProducts) {
+        let list = savedProducts
+        for(let i = 0; i < list.length; i++){
+            let obj = list[i]
+            if(obj["albumName"] === albumName) {
+                return true
+            }
+        }
+    }
+    return false
+}
+
 function getProduct() {
+    console.log(data)
     for(let i = 0; i < data.length; i++) {
         let map = data[i]
         let title = map["albumName"]
@@ -29,6 +49,7 @@ function renderProduct() {
 
     let mainImg = document.getElementById("images")
     mainImg.src = product.images
+
 
     let genreinfo = document.getElementById("genre")
     genreinfo.innerHTML = product.genre
@@ -65,6 +86,30 @@ function renderProduct() {
         parrafo.textContent = elementos2[i];
         songs2.appendChild(parrafo);
     }
+
+    //console.log(isProductSaved(titleH1.textContent))
+    
+    addToFavButton.textContent = isProductSaved(titleH1.textContent) ? "Remove from favorites" : "Add to favorites"
 }
 
 renderProduct()
+
+
+
+addToFavButton.addEventListener("click", ()=>{
+    let product = getProduct()
+    if(product.saved === true){
+        currentUser.favorites = currentUser.favorites.filter(p => p.albumName !== product.albumName )
+        product.saved = false
+    }else{
+        product.saved = true 
+        let map = product.toMap()
+        currentUser.favorites.push(map)
+    }
+
+    console.log(JSON.stringify(currentUser))
+    localStorage.setItem(currentUser.user, JSON.stringify(currentUser))
+    addToFavButton.textContent = product.saved? "Remove from favorites" : "Add to favorites"
+    
+
+})

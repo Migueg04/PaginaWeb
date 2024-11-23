@@ -8,16 +8,20 @@ document.addEventListener("DOMContentLoaded", function() {
             const email = document.getElementById('email').value.trim();
             const password = document.getElementById('password').value;
 
-            const storedEmail = localStorage.getItem('email');
-            const storedPassword = localStorage.getItem('password');
+            const storedEmail = localStorage.getItem(email);
+            let storedUser = JSON.parse(storedEmail);
+            console.log(storedUser)
+            console.log(`email: ${email}, password: ${password}`)
+            //const storedPassword = localStorage.getItem('password');
 
             if (!email || !password) {
                 alert('Please complete the form');
                 return;
             }
 
-            if (storedEmail === email && storedPassword === password) {
+            if (storedUser.user === email && storedUser.password === password) {
                 alert('Login successful');
+                localStorage.setItem("currentUser", storedUser.user)
                 window.location.href = 'Catalogo.html'; // Redirect on successful login
             } else {
                 alert('Email or password incorrect.');
@@ -25,5 +29,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     } else {
         console.error('Login form not found');
-    }
+    }
 });

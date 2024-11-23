@@ -1,4 +1,3 @@
-
 let products = []
 
 async function getProducts() {
@@ -34,9 +33,11 @@ function productSelected(pos) {
 }
 
 function selected(pos) {
+    let loggedUser = JSON.parse(localStorage.getItem(localStorage.getItem("currentUser"))) //Load logged user in json format
+
     let product = products[pos]
-    let savedProducts = localStorage.getItem("savedProducts")
-    let list = savedProducts ? JSON.parse(savedProducts) : []
+    let savedProducts = loggedUser.favorites
+    let list = savedProducts ? savedProducts : []
 
     if(!product.saved) {
         product.saved = true
@@ -46,15 +47,18 @@ function selected(pos) {
         product.saved = false
         list = list.filter(p => p.albumName !== product.albumName)
     }
+    loggedUser.favorites = list
 
-    localStorage.setItem("savedProducts", JSON.stringify(list))
+
+    localStorage.setItem(loggedUser.user, JSON.stringify(loggedUser))
     renderAllProducts(products)
 }
 
 function isProductSaved(albumName) {
-    let savedProducts = localStorage.getItem("savedProducts")
+    let loggedUser = JSON.parse(localStorage.getItem(localStorage.getItem("currentUser"))) //Load logged user in json format
+    let savedProducts = loggedUser.favorites
     if(savedProducts) {
-        let list = JSON.parse(savedProducts)
+        let list = savedProducts
         for(let i = 0; i < list.length; i++){
             let obj = list[i]
             if(obj["albumName"] === albumName) {
@@ -64,5 +68,7 @@ function isProductSaved(albumName) {
     }
     return false
 }
+
+
 
 getProducts()
